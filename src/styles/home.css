@@ -4,11 +4,12 @@
   justify-content: space-between;
   background-color: var(--dark-blue);
   height: 100px;
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
 }
 
 .navbar > * {
   cursor: pointer;
+  padding: 0;
 }
 
 .navlist {
@@ -18,7 +19,6 @@
 
 .navlist li {
   margin: 0 1rem;
-  /* cursor: pointer; */
   color: var(--white);
 }
 
