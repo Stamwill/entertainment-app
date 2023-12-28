@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-blue);
+}
+
+.navlist {
+  display: flex;
+  list-style-type: none;
+}
+
+.navlist li {
+  margin: 0 2rem;
+  cursor: pointer;
+  color: var(--white);
+}
