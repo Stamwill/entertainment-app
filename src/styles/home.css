@@ -1,7 +1,14 @@
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--dark-blue);
+  height: 100px;
+  padding: 0 2.5rem;
+}
+
+.navbar > * {
+  cursor: pointer;
 }
 
 .navlist {
@@ -10,7 +17,12 @@
 }
 
 .navlist li {
-  margin: 0 2rem;
-  cursor: pointer;
+  margin: 0 1rem;
+  /* cursor: pointer; */
   color: var(--white);
+}
+
+.userAvatar {
+  height: 40px;
+  width: 40px;
 }
