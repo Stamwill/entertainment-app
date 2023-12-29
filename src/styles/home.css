@@ -1,3 +1,4 @@
+/* NAVBAR STYLES */
 .navbar {
   display: flex;
   align-items: center;
@@ -25,4 +26,35 @@
 .userAvatar {
   height: 40px;
   width: 40px;
+}
+
+/* MAIN STYLES */
+
+.main {
+  padding: 1.5rem;
+}
+
+/* SEARCHBAR STYLES */
+
+.searchbar {
+  position: relative;
+  display: flex;
+  width: 20rem;
+  max-width: 30rem;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 5px;
+  top: 7px;
+}
+
+#searchBox {
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+  color: var(--white);
+  background-color: var(--black);
+  padding-left: 2.5rem;
 }
