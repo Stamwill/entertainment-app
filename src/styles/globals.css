@@ -10,6 +10,8 @@
 }
 
 body {
+  background: var(--black);
+  color: var(--white);
   margin: 0;
   padding: 0;
 }
