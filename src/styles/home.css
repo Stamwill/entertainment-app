@@ -39,22 +39,26 @@
 .searchbar {
   position: relative;
   display: flex;
-  width: 20rem;
+  min-width: 15rem;
   max-width: 30rem;
+  outline: none;
 }
+
 
 .searchIcon {
   position: absolute;
-  left: 5px;
-  top: 7px;
+  left: -5px;
+  top: 10px;
 }
 
 #searchBox {
   width: 100%;
   border: none;
-  border-radius: 15px;
   padding: 1rem;
   color: var(--white);
   background-color: var(--black);
   padding-left: 2.5rem;
+  font-size: 20px;
 }
+
+
