@@ -7,11 +7,17 @@
   --light-blue: rgb(90, 105, 143);
   --white: rgb(255, 255, 255);
 
+  /* FONTS */
+
+
+
 }
 
 body {
   background: var(--black);
   color: var(--white);
+  font-family: 'Outfit';
+  font-weight: 300;
   margin: 0;
   padding: 0;
 }
