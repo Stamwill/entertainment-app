@@ -36,10 +36,11 @@ function fetchData() {
           paragraph.appendChild(text)
           divElement.appendChild(paragraph)
 
-          let image = document.createElement('img')
-          image.src = `${'.' + json[i].thumbnail.trending.small}`
+          let trendingImg = document.createElement('img')
+          trendingImg.src = `${'.' + json[i].thumbnail.trending.small}`
+          trendingImg.classList.add('trendingImgContainer')
 
-          trending.appendChild(image)
+          divElement.appendChild(trendingImg)
 
           // Appending the div element to body
           trending.appendChild(divElement)
