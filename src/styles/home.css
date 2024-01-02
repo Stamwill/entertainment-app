@@ -61,4 +61,19 @@
   font-size: 20px;
 }
 
+/* Trending Styling */
+
+.testing {
+  display: flex;
+}
+
+#trending {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.trendingImgContainer {
+  display: flex;
+  width: 20rem;
+}
 
