@@ -63,17 +63,25 @@
 
 /* Trending Styling */
 
-.testing {
+#trending {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+#trendingItems {
   display: flex;
 }
 
-#trending {
+.trendingItem {
   display: flex;
-  margin: 2rem 0;
+  flex-direction: column;
+  margin: 0 3rem 0 0;
 }
 
 .trendingImgContainer {
   display: flex;
-  width: 20rem;
+  width: 15rem;
+  border-radius: 15px;
 }
 
