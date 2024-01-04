@@ -6,6 +6,7 @@
   background-color: var(--dark-blue);
   height: 100px;
   padding: 0 1.5rem;
+  
 }
 
 .navbar > * {
@@ -66,7 +67,7 @@
 #trending {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0;
+  margin: 0;
 }
 
 #trendingItems {
@@ -76,12 +77,46 @@
 .trendingItem {
   display: flex;
   flex-direction: column;
-  margin: 0 3rem 0 0;
+  justify-content: flex-start;
+  margin: 0 2rem 0 0;
+  height: 150px;
+}
+
+.trendingTextContainer {
+  position: relative;
+  top: 130%;
+}
+
+.trendingItemText {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  width: 50%;
+}
+
+.trendingTitleText {
+  font-size: 20px;
+  position: relative;
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.trendingItemText > * {
+  margin: 0;
 }
 
 .trendingImgContainer {
+  position: relative;
   display: flex;
-  width: 15rem;
+  width: 20rem;
+}
+
+.trendingImg {
+  position: absolute;
   border-radius: 15px;
+  width: 100%;
 }
 
