@@ -79,12 +79,12 @@
   flex-direction: column;
   justify-content: flex-start;
   margin: 0 2rem 0 0;
-  height: 150px;
+  /* height: 11rem; */
 }
 
 .trendingTextContainer {
   position: relative;
-  top: 130%;
+  top: 70%;
 }
 
 .trendingItemText {
@@ -115,7 +115,7 @@
 }
 
 .trendingImg {
-  position: absolute;
+  /* position: absolute; */
   border-radius: 15px;
   width: 100%;
 }
