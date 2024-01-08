@@ -5,58 +5,6 @@ const resetSearch = () => {
   search.reset()
 }
 
-// function fetchData() {
-//   fetch('../../data.json')
-//     .then(function (response) {
-//       return response.json()
-//     })
-//     .then(function (json) {
-//       for (let i = 0; i < json.length; i++) {
-//         if (json[i].isTrending) {
-//           let trendingItemContainer = document.getElementById('trendingItems')
-//           let trendingItem = document.createElement('Div')
-//           let trendingItemText = document.createElement('Div')
-
-//           //Add classes
-//           trendingItem.classList.add('trendingItem')
-//           trendingItemText.classList.add('trendingItemText')
-
-//           let titleText = document.createElement('P')
-//           let yearText = document.createElement('P')
-//           let ratingText = document.createElement('P')
-
-//           let title = document.createTextNode(`${json[i].title}`)
-//           let year = document.createTextNode(`${json[i].year}`)
-//           let rating = document.createTextNode(`${json[i].rating}`)
-
-//           // Data to append
-//           titleText.appendChild(title)
-//           yearText.appendChild(year)
-//           ratingText.appendChild(rating)
-
-//           // Append to trending Item
-//           trendingItemText.appendChild(titleText)
-//           trendingItemText.appendChild(yearText)
-//           trendingItemText.appendChild(ratingText)
-//           trendingItem.appendChild(trendingItemText)
-//           trendingItemContainer.appendChild(trendingItem)
-
-//           // Image creation
-//           let trendingImgContainer = document.createElement('Div')
-//           let trendingImg = document.createElement('img')
-//           trendingImg.src = `${'.' + json[i].thumbnail.trending.small}`
-//           trendingImgContainer.classList.add('trendingImgContainer')
-//           trendingImg.classList.add('trendingImg')
-
-//           trendingImgContainer.appendChild(trendingImg)
-//           trendingItem.appendChild(trendingImgContainer)
-//         }
-//       }
-//     })
-// }
-
-// fetchData()
-
 const fetchTrending = () => {
   fetch('../../data.json')
     .then(function (response) {
@@ -102,7 +50,6 @@ const createEntertainmentBlock = (title, year, rating, category, image) => {
   trendingItemText.appendChild(categoryText)
   trendingItemText.appendChild(ratingText)
 
-  trendingItem.appendChild(imgContainer)
   trendingItem.appendChild(trendingItemText)
   trendingItem.appendChild(titleText)
 
@@ -116,7 +63,7 @@ const createEntertainmentBlock = (title, year, rating, category, image) => {
 
   //Image
 
-  let trendingImgContainer = document.createElement('Div')
+  let trendingImgContainer = document.createElement('div')
 
   trendingImgContainer.classList.add('trendingImgContainer')
   image.classList.add('trendingImg')
